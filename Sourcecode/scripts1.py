@@ -5,12 +5,12 @@ import sys
 TOKEN= str(sys.argv[1])
 OWNER= str(sys.argv[2])
 REPO= str(sys.argv[3])
-workflowname= str(sys.argv[4])
+workflow_name= str(sys.argv[4])
 parameter1= str(sys.argv[5])
 parameter2 = str(sys.argv[6])
 
 print( "the toke value is")
-def trigger_workflow(workflowname,parameter1,parameter2):
+def trigger_workflow(workflow_name,parameter1,parameter2):
 
       headers = {
         "Accept": "application/vnd.github.v3+json",
