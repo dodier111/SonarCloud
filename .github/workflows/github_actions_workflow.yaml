@@ -17,5 +17,5 @@ jobs:
         with:
           args: >
               -Dsonar.organization=dodier111
-              -Dsonar.projectKey=SonarCloud
+              -Dsonar.projectKey=dodier111
               -Dsonar.python.coverage.reportPaths=coverage.xml
