@@ -15,11 +15,15 @@ pipeline {
         }
 
         stage('Build') {
-            steps {
-                // Build your Java application using Maven
-                sh 'mvn clean install'
-            }
+    steps {
+        // Use the configured Maven installation
+        script {
+            def mavenHome = tool 'Maven'
+            sh "${mavenHome}/bin/mvn clean install"
         }
+    }
+}
+
 
         stage('SonarQube Analysis') {
             steps {
